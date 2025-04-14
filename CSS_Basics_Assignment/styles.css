@@ -5,6 +5,7 @@
 }
 
 .color-example {
+    width: max-content;
     color: darkcyan;
     background-color: #ffdd7e;
     border-style: solid;
@@ -26,6 +27,7 @@
 }
 
 .div-example {
+    width: max-content;
     background-color: #b70000;
     border-style: double;
     border-width: 8px;
