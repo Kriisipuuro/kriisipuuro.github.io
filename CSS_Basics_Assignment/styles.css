@@ -1,3 +1,19 @@
+body {
+    background-color: #6896ff;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
 .header-example {
     font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,13 +26,29 @@
     background-color: #ffdd7e;
     border-style: solid;
     border-width: 3px;
-    border-color: #cc8005;    
+    border-color: #cc8005;
     padding: 23px;
 }
 
-.list-example {
-    list-style: circle;
-    color: #b70000;
+.navigationlist {
+    color: black;
+    font-family: cursive;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 25px;
+    background-color: #ffa900;
+    padding: 8px;
+    border: 2px solid #b47208;
+    border-radius: 5px;
+}
+.navigationlist li {
+    background-color: white;
+    padding: 9px;
+    margin: 2px 0;
+    border: 2px solid #272726;
+    border-radius: 5px;
 }
 
 .text-example {
@@ -32,4 +64,66 @@
     border-style: double;
     border-width: 8px;
     padding: 20px;
+}
+
+.secondheader h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 48px;
+    color: #ffa900;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.secondheader p {
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    color: #222222;
+}
+
+.textandimage {
+    background-color: #ffffff;
+    padding: 7px;
+    margin: 0 0 20px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.textandimage img {
+    width: 50px;
+    height: auto;
+    justify-content: center;
+.div-cat {
+    background-color: rgb(255, 197, 0);
+    border-radius: 50px;
+}
+
+.text-endof {
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px 32px;
+}
+.div-cat img {
+    overflow: hidden;
+    clip-path: path("M 0 40 C 142 -43, 323 115, 600 40 L 600 1000 L 0 1000 Z");
+}
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+label {
+        margin: 20px 0 2px ;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+}
+meter {
+
+    width: 300px;
+    height: 30px;
 }
