@@ -86,7 +86,7 @@ body {
     background-color: #ff6e6e;
     border-style: solid;
     border-width: 3px;
-    padding: 63px;
+    padding: 28px;
     margin: 10px 0 ;
 }
 footer {
@@ -98,4 +98,36 @@ footer {
     font-size: 0.9rem;
     border-top: 13px solid #ffa900;
     margin-top: 40px;
+}
+.NaviDivThird {
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: #ffa900;
+    border: 2px solid #b47208;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 10px 2px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NaviDivThird ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.NaviDivThird li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #272726;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.NaviDivThird a {
+    text-decoration: none;
+    color: black;
+    display: block;
 }
