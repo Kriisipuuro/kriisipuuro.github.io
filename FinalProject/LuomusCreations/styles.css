@@ -1,0 +1,390 @@
+.bigelow-rules-regular {
+  font-family: "Bigelow Rules", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+main {
+  flex: 1;
+}
+.main-content {
+  margin-top: 150px; /* Lisää tilaa headerin alapuolelle */
+}
+.main-content h1 {
+  font-family: "Bigelow Rules", serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-image: url("IMG/BG.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    ),
+    /* Valkoinen vinjetti alhaalta */ url("IMG/BG.webp"); /* Taustakuva */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Taustalle */
+}
+/* Header-asettelu */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; /* Muutettu relative -> fixed */
+  top: 0;
+  background-color: #6e8064;
+  padding: 20px 0;
+  width: 100%;
+  z-index: 1000; /* Varmistaa, että header pysyy muiden elementtien päällä */
+}
+
+/* Logo vasemmalle ylös */
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.logo img {
+  height: 75px; /* Voit säätää tarvittaessa */
+}
+
+/* Navigointilinkit keskellä alhaalla */
+.nav {
+  margin-top: 80px; /* Jotta logo ei peitä linkkejä */
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 60px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+.nav a:hover {
+  color: #da814a;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.gallery {
+  column-count: 2;
+  column-gap: 15px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+}
+
+.text-content {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Valkoinen taustaväri, jossa läpinäkyvyyttä */
+  padding: 20px; /* Lisää tilaa ympärille */
+  border-radius: 10px; /* Pyöristetyt kulmat (valinnainen) */
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content h1 {
+  font-family: "Bigelow Rules", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 20px;
+}
+.intro h1 {
+  font-family: "Bigelow Rules", serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shopgallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.product {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h2 {
+  font-family: "Bigelow Rules", serif;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  background-color: #da814a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #c96b3b;
+}
+.blog-content {
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.blog {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.blog-img {
+  margin: 20px;
+}
+
+.blog-img img {
+  max-width: 300px; /* Voit säätää kuvan leveyttä tarpeidesi mukaan */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+}
+
+.blog h1 {
+  margin-top: 0;
+}
+
+.blog p {
+  margin-top: 10px;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.contact-img {
+  margin: 20px;
+}
+
+.contact-img img {
+  max-width: 300px; /* Voit säätää kuvan leveyttä tarpeidesi mukaan */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+}
+
+.contact-content {
+  flex: 1 1 60%;
+  padding: 30px;
+}
+
+
+.contact-content form label {
+  display: block;
+  margin-top: 15px;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-content form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-content form button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #6e8064;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-left ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-left ul li a:hover {
+  color: #da814a;
+}
+
+.footer-center img {
+  height: 100px;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: #da814a;
+}
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  display: inline;
+}
+
+.cookie-banner a {
+  color: #da814a;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #da814a;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cookie-banner button:hover {
+  background-color: #c96b2c;
+}
