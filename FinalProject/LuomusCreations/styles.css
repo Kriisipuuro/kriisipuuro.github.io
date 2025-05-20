@@ -6,14 +6,12 @@
 
 .open-sans {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 .quicksand {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
@@ -21,7 +19,7 @@ main {
   flex: 1;
 }
 .main-content {
-  margin-top: 150px; /* Lisää tilaa headerin alapuolelle */
+  margin-top: 150px;
 }
 .main-content h1 {
   font-family: "Bigelow Rules", serif;
@@ -51,13 +49,13 @@ body::before {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     ),
-    /* Valkoinen vinjetti alhaalta */ url("IMG/BG.webp"); /* Taustakuva */
+  url("IMG/BG.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Taustalle */
+  z-index: -1;
 }
-/* Header-asettelu */
+
 header {
   display: flex;
   flex-direction: column;
@@ -67,10 +65,9 @@ header {
   background-color: #6e8064;
   padding: 20px 0;
   width: 100%;
-  z-index: 1000; /* Varmistaa, että header pysyy muiden elementtien päällä */
+  z-index: 1000;
 }
 
-/* Logo vasemmalle ylös */
 .logo {
   position: absolute;
   left: 20px;
@@ -78,10 +75,9 @@ header {
 }
 
 .logo img {
-  height: 75px; /* Voit säätää tarvittaessa */
+  height: 75px;
 }
 
-/* Navigointilinkit keskellä alhaalla */
 .nav {
   margin-top: 80px; /* Jotta logo ei peitä linkkejä */
 }
@@ -134,9 +130,9 @@ header {
     255,
     255,
     0.8
-  ); /* Valkoinen taustaväri, jossa läpinäkyvyyttä */
-  padding: 20px; /* Lisää tilaa ympärille */
-  border-radius: 10px; /* Pyöristetyt kulmat (valinnainen) */
+  );
+  padding: 20px; 
+  border-radius: 10px;
   flex: 1;
   min-width: 300px;
 }
@@ -231,7 +227,7 @@ header {
 }
 
 .blog-img img {
-  max-width: 300px; /* Voit säätää kuvan leveyttä tarpeidesi mukaan */
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -257,7 +253,7 @@ header {
 }
 
 .contact-img img {
-  max-width: 300px; /* Voit säätää kuvan leveyttä tarpeidesi mukaan */
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -277,7 +273,7 @@ header {
 
 .contact-content form input,
 .contact-content form textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
@@ -295,7 +291,7 @@ header {
 }
 
 .contact-content form button:hover {
-  background: #0056b3;
+  background: #da814a;
 }
 
 .message {
