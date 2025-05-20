@@ -88,22 +88,5 @@
       </div>
     </footer>
 
-    <script>
-      document.getElementById('accept-cookies').addEventListener('click', function() {
-        document.getElementById('cookie-banner').style.display = 'none';
-        localStorage.setItem('cookiesAccepted', 'true');
-        // Aseta ei-välttämättömät evästeet
-      });
-      document.getElementById('reject-cookies').addEventListener('click', function() {
-        document.getElementById('cookie-banner').style.display = 'none';
-        localStorage.setItem('cookiesAccepted', 'false');
-        // Estä ei-välttämättömät evästeet
-      });
-      window.onload = function() {
-        if (!localStorage.getItem('cookiesAccepted')) {
-          document.getElementById('cookie-banner').style.display = 'block';
-        }
-      }
-    </script>
   </body>
 </html>

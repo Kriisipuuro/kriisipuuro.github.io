@@ -81,28 +81,5 @@
         </p>
       </div>
     </footer>
-    <div class="cookie-banner" id="cookie-banner">
-      <p>Verkkosivustomme käyttää evästeitä parantaakseen käyttökokemustasi. <a href="privacy-policy.html">Lue lisää</a>
-      </p>
-      <button id="accept-cookies">Hyväksy</button>
-      <button id="reject-cookies">Hylkää</button>
-    </div>
-    <script>
-      document.getElementById('accept-cookies').addEventListener('click', function() {
-        document.getElementById('cookie-banner').style.display = 'none';
-        localStorage.setItem('cookiesAccepted', 'true');
-        // Aseta ei-välttämättömät evästeet
-      });
-      document.getElementById('reject-cookies').addEventListener('click', function() {
-        document.getElementById('cookie-banner').style.display = 'none';
-        localStorage.setItem('cookiesAccepted', 'false');
-        // Estä ei-välttämättömät evästeet
-      });
-      window.onload = function() {
-        if (!localStorage.getItem('cookiesAccepted')) {
-          document.getElementById('cookie-banner').style.display = 'block';
-        }
-      }
-    </script>
   </body>
 </html>
