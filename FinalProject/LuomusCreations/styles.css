@@ -269,7 +269,8 @@ header {
     255,
     0.8
   );
-  padding: 20px; 
+  margin: 22px;
+  padding: 13px; 
   border-radius: 10px;
   min-width: 300px;
 }
@@ -282,7 +283,7 @@ header {
 
 .contact-content form input,
 .contact-content form textarea {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
