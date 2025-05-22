@@ -248,6 +248,7 @@ header {
   margin: 20px 0;
 }
 
+
 .contact-img {
   margin: 20px;
 }
@@ -262,7 +263,15 @@ header {
 
 .contact-content {
   flex: 1 1 60%;
-  padding: 30px;
+    background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  );
+  padding: 20px; 
+  border-radius: 10px;
+  min-width: 300px;
 }
 
 
